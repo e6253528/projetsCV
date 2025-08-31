@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="login.css">
+    <title>StudyPortal</title>
+</head>
+<body>
+    <h1>StudyPortal</h1>
+    <section class="section">
+        <h2>Se connecter</h2>
+        <div class="container">
+            <form id="idLogin">
+                <div class="button-group">
+                    <button type="button" class="button active" id="etudiant">Étudiant</button>
+                    <button type="button" class="button" id="admin">Admin</button>
+                </div>
+                
+                <div id="role-message" class="has-text-centered has-text-weight-bold"></div>
+
+                <div class="field">
+                    <label class="label" for="name">Nom d'utilisateur</label>
+                    <div class="control has-icons-left">
+                        <input class="input" type="text" id="name" placeholder="Nom d'utilisateur">
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-user"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label" for="password">Mot de passe</label>
+                    <div class="control has-icons-left">
+                        <input class="input" type="password" id="password" placeholder="Mot de passe">
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-lock"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="control">
+                    <button class="button is-primary" type="submit">Se connecter</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <div class="cadre">
+        <p>Vous n'avez pas de compte ? <a href="register.html">Inscrivez-vous</a></p>
+    </div>
+
+    <script src="scriptLogin.js"></script>
+</body>
+</html>

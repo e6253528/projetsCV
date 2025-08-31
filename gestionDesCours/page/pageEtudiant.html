@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+        <link rel="stylesheet" href="etudiant.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <div class="control">
+                <button class="button active" type="submit" id="bouttonLogOut">
+                    <i class="fas fa-right-from-bracket"></i> 
+                </button>                
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li ><a data-section="consulter" class="active"> Consulter les cours</a></li>
+                    <li ><a data-section="cours-inscrit"> Cours inscrit </a></li>
+                </ul>
+            </nav>
+            <div class="entete">
+                <h1> Bienvenu Étudiant!</h1>
+            </div>
+        </header>
+        <!--Consulter les cours et s'inscire-->
+        <main>
+            <section id="consulter" class="hidden">
+                <input type="text" class="input" id="search" placeholder="Recherche par nom....">
+                <h2 class="title mt-2"> Cours </h2>
+                <table class="table is-fullwidth is-striped" id="tableCours">
+                    <thead>
+                        <tr>
+                            <th>Nom</th>
+                            <th>Description</th>
+                            <th> Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="listeCours">
+                        <!-- Les étudiants seront ajoutés ici dynamiquement -->
+                    </tbody>
+                </table>
+                <div id="pagination" class="pagination-controls"></div>
+            </section>
+            <!--Pour voir les cours que l'utilisateur est inscrit-->
+            <section id="cours-inscrit" class="hidden">
+                <h2 class="title mt-2"> Consulter vos cours  </h2>
+                <table class="table is-fullwidth is-striped" id="tableInscrit">
+                    <thead>
+                        <tr>
+                            <th>Nom du cours</th>
+                            <th>Description</th>
+                            <th>Contenu du cours</th>
+                        </tr>
+                    </thead>
+                    <tbody id="listeInscrit">
+                        <!-- Les étudiants seront ajoutés ici dynamiquement -->
+                    </tbody>
+                </table>
+            </section>
+        </main>     
+        <script src="scriptEtudiant.js"></script>
+    </body>
+</html>

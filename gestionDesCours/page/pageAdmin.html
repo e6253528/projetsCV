@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+        <link rel="stylesheet" href="admin.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <div class="control">
+                <button class="button active" type="submit" id="bouttonLogOut">
+                    <i class="fas fa-right-from-bracket"></i> 
+                </button>                
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li ><a data-section="cours" class="active"> Création cours</a></li>
+                    <li ><a data-section="gestion-cours"> Gestion des cours</a></li>
+                    <li ><a data-section="inscriptions"> Gestion des inscriptions </a></li>
+                </ul>
+            </nav>
+            <div class="entete">
+                <h1> Bienvenu Admin!</h1>
+            </div>
+        </header>
+        <!--Création des cours-->
+        <main>
+            <section id="cours">
+                <div class="container">
+                    <div class="box">
+                        <form id="idCreationCours">
+                            <div class="field">
+                                <label class="label" for="title"> Titre du cours</label>
+                                <div class="control has-icons-left">
+                                    <input class="input" type="text" id="title" placeholder="Entrez le titre du cours">
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-user"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label" for="description"> Description du cours</label>
+                                <div class="control has-icons-left">
+                                    <textarea class="textarea" id="description" placeholder="Entrez la description du cours"></textarea>
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-file-alt"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="field is-grouped is grouped-centered">
+                                <div class="control">
+                                    <button class="button is-primary" type="submit"> Créer</button>
+                                </div>
+                                <div class="control">
+                                    <button class="button is-light" type="reset"> Annuler</button>
+                                </div>
+                            </div>
+                    
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!--Pour voir les cours déja créer-->
+            <section id="gestion-cours" class="hidden">
+                <h2 class="title mt-2">Vos cours</h2>
+                <table class="table is-fullwidth is-striped" id="tableCours">
+                    <thead>
+                        <tr>
+                            <th>Nom</th>
+                            <th>Description</th>
+                            <th>Ajouter documents</th>
+                            <th> Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="listeCours">
+                        <!-- Les étudiants seront ajoutés ici dynamiquement -->
+                    </tbody>
+                </table>
+            </section>
+            <!--Pour voir les inscriptions-->
+            <section id="inscriptions" class="hidden">
+                <h3 class="title mt-2"> Les étudiants </h3>
+                <table class="table is-fullwidth is-striped" id="tableUsers">
+                    <thead>
+                        <tr>
+                            <th>Username</th>
+                            <th> Cours inscrit </th>
+                            <th> Date d'inscription </th>
+                            <th> Actions </th> <!--Ajouter,Supprimer,Bannir-->
+                        </tr>
+                    </thead>
+                    <tbody id="listeUsers">
+                        <!-- Les étudiants seront ajoutés ici dynamiquement -->
+                    </tbody>
+                </table>
+            </section>
+        </main>     
+    <script src="scriptCours.js"></script>
+    </body>
+</html>
