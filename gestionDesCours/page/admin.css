@@ -1,0 +1,129 @@
+.entete {
+    background-color: #E6E6FA; /*appliquer la couleur a lentete*/
+    width: 100%; /*lentete prend toute la largeur de lecran*/
+    height : 100px; /* hauteur de lentete est de 100 pixel*/
+    text-align: left; /* place le texte a gauche*/
+    left : 0; /*aligne le  block a gauche*/
+    top : 0; /*aligne le bloc en haut de la page*/
+    padding-top: 30px; /*Ajoute de lespace entre le haut et le texte*/
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /*ajoute de lombre sur lentete*/
+    margin-top: 0;
+}
+
+.main-nav {
+   background-color: #E6E6FA;
+   padding: 5px 10px;
+}
+
+.main-nav ul {
+   list-style: none;
+   display: flex;
+   justify-content: space-around;
+}
+
+.main-nav ul li {
+   position: relative;
+}
+
+.main-nav ul li a {
+   text-decoration: none;
+   color: white;
+   font-weight: bold;
+   padding: 10px;
+   display: block;
+   text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.hidden {
+   display: none !important;
+}
+
+.main-nav a.active {
+   font-weight: bold;
+   color: black; /* Couleur pour l'élément actif */
+}
+
+
+h1 {
+   font-size: xx-large; /*agrandir la taille du texte*/
+   font-weight: 500; /*le texte soit plus épais*/
+   color: azure; /*texte soit blanc*/
+   text-align: center;
+}
+
+.control {
+   display: flex;
+   justify-content: flex-end;
+
+}
+
+.button.is-circle {
+   width: 50px; /* Set the button's width */
+   height: 50px; /* Set the button's height */
+   border-radius: 50%; /* rendre le button plus arrondi */
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 0
+}
+
+.button-container {
+   display: flex;
+   align-items: center;
+}
+
+.button-container a button {
+   margin-right: 50px;
+}
+
+.button-container button:last-child {
+   margin-right: 0;
+}
+
+.menu {
+   position:absolute;
+   right:0;
+   top: 30%;
+   margin:20px;
+   padding:10px;
+   border-radius: 5px;
+}
+
+.menu p {
+   font-size: large;
+   font-weight: bold;
+   color:#8B0000;
+}
+
+.section2 {
+   border-style: solid;
+   padding:0.5em;
+   width: 63%;
+   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+   margin:0 auto;
+   margin-top: 1px;
+   border-width: 0.5px;
+   margin-bottom: 6%;
+}
+
+.box {
+   background-color: whitesmoke; /* Couleur du fond */
+   border: 0.5px solid #4a4a4a; /* Couleur de la bordure */
+   border-radius: 8px;       /* Coins arrondis */
+   padding: 18px;             /* Espacement intérieur */
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre */
+   width: 75%;
+}
+
+#cours {
+   display: flex;
+   justify-content: center; /* Horizontal centering */
+   align-items: center; /* Vertical centering */
+   height: 500px; /* Make the section fill the viewport height */
+   background-color: #f4f4f4;
+}
+
+.button.is-circle {
+   margin-bottom: 2rem;
+}
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+        <link rel="stylesheet" href="register.css" />
+    </head>
+
+    <body>
+        <h1>StudyPortal</h1>
+
+        <section class ="section">
+            <h2>Créez un compte</h2>
+            <div class ="container">
+                <form id="idInscription">
+                    <div class="button-group">
+                        <button class="button active" id="etudiant">Étudiants</button>
+                        <button class="button" id="admin"> Admin </button>
+                    </div>
+                    <p id="role-message" class="has-text-centered"> </p>
+                    <div class="field">
+                        <label class="label" for="Name">Username</label>
+                        <div class="control has-icons-left">
+                            <input class="input" type="text" id="username" placeholder="Nom d'utilisateur">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa_user"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label" for="email">Email</label>
+                        <div class="control has-icons-left">
+                            <input class="input" type="email" id="email" placeholder="Email">
+                             <span class="icon is-small is left">
+                                <i class="fas fa-envelope"></i>
+                             </span>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label" for="password">Mot de passe</label>
+                        <div class="control has-icons-left">
+                            <input class="input" type="text" id="password" placeholder="Mot de passe">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-phone"></i>
+                            </span>
+                        </div>
+                    </div>
+                     
+                    <div class="control">
+                        <button class="button" type="submit">S'inscrire</button>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+
+        <div class="cadre">
+            <p>Vous avez un compte? <a href="login.html"> Connectez-vous </a></p>
+        </div>
+        <script src="scriptUsers.js"></script>
+    </body>
+</html>
